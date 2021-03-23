@@ -6,7 +6,7 @@
   <link href="https://sealrui.github.io/atom.xml" rel="self"/>
   
   <link href="https://sealrui.github.io/"/>
-  <updated>2021-03-23T15:09:32.572Z</updated>
+  <updated>2021-03-23T16:09:18.053Z</updated>
   <id>https://sealrui.github.io/</id>
   
   <author>
@@ -17,40 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test2</title>
-    <link href="https://sealrui.github.io/archives/test2.html"/>
-    <id>https://sealrui.github.io/archives/test2.html</id>
-    <published>2021-03-23T15:51:58.000Z</published>
-    <updated>2021-03-23T15:09:32.572Z</updated>
+    <title>test3</title>
+    <link href="https://sealrui.github.io/archives/test3.html"/>
+    <id>https://sealrui.github.io/archives/test3.html</id>
+    <published>2021-03-23T23:50:24.000Z</published>
+    <updated>2021-03-23T16:09:18.053Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;hello&lt;br&gt;asdfasdf &lt;/p&gt;</summary>
     
     
     
+    <category term="图片" scheme="https://sealrui.github.io/categories/%E5%9B%BE%E7%89%87/"/>
     
     
-  </entry>
-  
-  <entry>
-    <title>test1</title>
-    <link href="https://sealrui.github.io/archives/test1.html"/>
-    <id>https://sealrui.github.io/archives/test1.html</id>
-    <published>2021-03-23T15:08:16.000Z</published>
-    <updated>2021-03-23T15:09:32.572Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="test" scheme="https://sealrui.github.io/categories/test/"/>
-    
-    
-    <category term="test" scheme="https://sealrui.github.io/tags/test/"/>
+    <category term="EVA" scheme="https://sealrui.github.io/tags/EVA/"/>
     
   </entry>
   
@@ -59,7 +40,7 @@
     <link href="https://sealrui.github.io/archives/hello.html"/>
     <id>https://sealrui.github.io/archives/hello.html</id>
     <published>2018-11-23T13:20:03.000Z</published>
-    <updated>2021-03-23T15:09:32.572Z</updated>
+    <updated>2021-03-23T16:09:18.053Z</updated>
     
     
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>

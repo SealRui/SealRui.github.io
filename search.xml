@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test2</title>
-    <url>/archives/test2.html</url>
-    <content><![CDATA[]]></content>
+    <title>test3</title>
+    <url>/archives/test3.html</url>
+    <content><![CDATA[<p>hello<br>asdfasdf </p>
+<span id="more"></span>
+<p><img src="/archives/test3/EVA.jpg" alt="EVA"></p>
+]]></content>
+      <categories>
+        <category>图片</category>
+      </categories>
+      <tags>
+        <tag>EVA</tag>
+      </tags>
   </entry>
   <entry>
     <title>hello</title>
@@ -22,7 +31,7 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p><img src="hello/test.jpg" alt="1111"></p>
+<p><img src="/archives/hello/test.jpg" alt="test"></p>
 ]]></content>
       <categories>
         <category>数据分析</category>
@@ -31,17 +40,6 @@
       <tags>
         <tag>Python</tag>
         <tag>数据分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test1</title>
-    <url>/archives/test1.html</url>
-    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
       </tags>
   </entry>
 </search>
