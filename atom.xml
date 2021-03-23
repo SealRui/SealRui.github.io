@@ -6,7 +6,7 @@
   <link href="https://sealrui.github.io/atom.xml" rel="self"/>
   
   <link href="https://sealrui.github.io/"/>
-  <updated>2021-03-23T02:29:47.508Z</updated>
+  <updated>2021-03-23T08:04:24.053Z</updated>
   <id>https://sealrui.github.io/</id>
   
   <author>
@@ -17,11 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>test2</title>
+    <link href="https://sealrui.github.io/archives/test2.html"/>
+    <id>https://sealrui.github.io/archives/test2.html</id>
+    <published>2021-03-23T15:51:58.000Z</published>
+    <updated>2021-03-23T08:04:24.053Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test1</title>
+    <link href="https://sealrui.github.io/archives/test1.html"/>
+    <id>https://sealrui.github.io/archives/test1.html</id>
+    <published>2021-03-23T15:08:16.000Z</published>
+    <updated>2021-03-23T08:04:24.053Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;hello&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="https://sealrui.github.io/categories/test/"/>
+    
+    
+    <category term="test" scheme="https://sealrui.github.io/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hello</title>
     <link href="https://sealrui.github.io/archives/hello.html"/>
     <id>https://sealrui.github.io/archives/hello.html</id>
     <published>2018-11-23T13:20:03.000Z</published>
-    <updated>2021-03-23T02:29:47.508Z</updated>
+    <updated>2021-03-23T08:04:24.053Z</updated>
     
     
       
