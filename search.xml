@@ -3,9 +3,7 @@
   <entry>
     <title>test3</title>
     <url>/archives/test3.html</url>
-    <content><![CDATA[<p>hello<br>asdfasdf </p>
-<span id="more"></span>
-<p><img src="/archives/test3/EVA.jpg" alt="EVA"></p>
+    <content><![CDATA[<p>hello<br>asdfasdf<br><img src="/archives/test3/EVA.jpg" alt="EVA"></p>
 ]]></content>
       <categories>
         <category>图片</category>
