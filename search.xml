@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test3</title>
-    <url>/archives/test3.html</url>
+    <title>图片测试</title>
+    <url>/archives/photoupload.html</url>
     <content><![CDATA[<p><img src="https://gitee.com/SealRui/images-upload/raw/master/myblog/20210324215410.jpg" alt="EVA"></p>
 <span id="more"></span>
 
+<p><img src="https://gitee.com/SealRui/images-upload/raw/master/myblog/20210324214811.jpg" alt="test"></p>
 <h1 id="Markdown-For-Typora"><a href="#Markdown-For-Typora" class="headerlink" title="Markdown For Typora"></a>Markdown For Typora</h1><h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p><strong>Markdown</strong> is created by <a href="http://daringfireball.net/">Daring Fireball</a>; the original guideline is <a href="http://daringfireball.net/projects/markdown/syntax">here</a>. Its syntax, however, varies between different parsers or editors. <strong>Typora</strong> is using <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub Flavored Markdown</a>.</p>
 <p>[toc]</p>
 <h2 id="Block-Elements"><a href="#Block-Elements" class="headerlink" title="Block Elements"></a>Block Elements</h2><h3 id="Paragraph-and-line-breaks"><a href="#Paragraph-and-line-breaks" class="headerlink" title="Paragraph and line breaks"></a>Paragraph and line breaks</h3><p>A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by two or more blank lines. In Typora, you only need one blank line (press <code>Return</code> once) to create a new paragraph.</p>
@@ -79,7 +80,7 @@
 
 <p>In Typora, clicking the link will expand it for editing, and command+click will open the hyperlink in your web browser.</p>
 <h3 id="URLs"><a href="#URLs" class="headerlink" title="URLs"></a>URLs</h3><p>Typora allows you to insert URLs as links, wrapped by <code>&lt;</code>brackets<code>&gt;</code>.</p>
-<p><code>&lt;i@typora.io&gt;</code> becomes <a href="mailto:&#x69;&#x40;&#116;&#x79;&#x70;&#x6f;&#114;&#x61;&#x2e;&#x69;&#x6f;">&#x69;&#x40;&#116;&#x79;&#x70;&#x6f;&#114;&#x61;&#x2e;&#x69;&#x6f;</a>.</p>
+<p><code>&lt;i@typora.io&gt;</code> becomes <a href="mailto:&#105;&#x40;&#x74;&#121;&#x70;&#x6f;&#114;&#x61;&#46;&#x69;&#x6f;">&#105;&#x40;&#x74;&#121;&#x70;&#x6f;&#114;&#x61;&#46;&#x69;&#x6f;</a>.</p>
 <p>Typora will also automatically link standard URLs. e.g: <a href="http://www.google.com/">www.google.com</a>.</p>
 <h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>Images have similar syntax as links, but they require an additional <code>!</code> char before the start of the link. The syntax for inserting an image looks like this:</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">Alt text</span>](<span class="link">/path/to/img.jpg</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">Alt text</span>](<span class="link">/path/to/img.jpg &quot;Optional title&quot;</span>)</span><br></pre></td></tr></table></figure>
@@ -172,7 +173,6 @@
 
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p><img src="https://gitee.com/SealRui/images-upload/raw/master/myblog/20210324214811.jpg" alt="test"></p>
 ]]></content>
       <categories>
         <category>数据分析</category>
