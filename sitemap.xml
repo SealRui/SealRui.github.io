@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sealrui.github.io/archives/test3.html</loc>
+    <loc>https://www.zhangqing.online/archives/test3.html</loc>
     
     <lastmod>2021-03-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/archives/hello.html</loc>
+    <loc>https://www.zhangqing.online/archives/hello.html</loc>
     
     <lastmod>2021-03-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/404.html</loc>
+    <loc>https://www.zhangqing.online/404.html</loc>
     
     <lastmod>2021-03-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/about/index.html</loc>
+    <loc>https://www.zhangqing.online/about/index.html</loc>
     
     <lastmod>2021-03-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/categories/index.html</loc>
+    <loc>https://www.zhangqing.online/categories/index.html</loc>
     
     <lastmod>2021-03-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/links/index.html</loc>
+    <loc>https://www.zhangqing.online/links/index.html</loc>
     
     <lastmod>2021-03-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/tags/index.html</loc>
+    <loc>https://www.zhangqing.online/tags/index.html</loc>
     
     <lastmod>2021-03-26</lastmod>
     
@@ -52,7 +52,7 @@
   
 
   <url>
-    <loc>https://sealrui.github.io/</loc>
+    <loc>https://www.zhangqing.online/</loc>
     <lastmod>2021-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -60,21 +60,21 @@
 
   
   <url>
-    <loc>https://sealrui.github.io/tags/Python/</loc>
+    <loc>https://www.zhangqing.online/tags/Python/</loc>
     <lastmod>2021-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</loc>
+    <loc>https://www.zhangqing.online/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</loc>
     <lastmod>2021-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/tags/EVA/</loc>
+    <loc>https://www.zhangqing.online/tags/EVA/</loc>
     <lastmod>2021-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -83,21 +83,21 @@
 
   
   <url>
-    <loc>https://sealrui.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</loc>
+    <loc>https://www.zhangqing.online/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</loc>
     <lastmod>2021-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E5%AE%9E%E6%88%98/</loc>
+    <loc>https://www.zhangqing.online/categories/%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2021-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://sealrui.github.io/categories/%E5%9B%BE%E7%89%87/</loc>
+    <loc>https://www.zhangqing.online/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E5%AE%9E%E6%88%98/</loc>
     <lastmod>2021-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
