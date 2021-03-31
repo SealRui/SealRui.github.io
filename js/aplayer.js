@@ -30,4 +30,6 @@ $(function () {
             ap.list.add(list);
         }
     });
+    // 隐藏歌词
+    // ap.lrc.hide();
 });
