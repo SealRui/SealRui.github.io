@@ -23,6 +23,13 @@
   </url>
   
   <url>
+    <loc>https://www.zhangqing.online/404.html</loc>
+    
+    <lastmod>2021-04-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.zhangqing.online/about/index.html</loc>
     
     <lastmod>2021-04-23</lastmod>
@@ -57,13 +64,6 @@
     
   </url>
   
-  <url>
-    <loc>https://www.zhangqing.online/404.html</loc>
-    
-    <lastmod>2021-04-23</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://www.zhangqing.online/</loc>
@@ -75,13 +75,6 @@
   
   <url>
     <loc>https://www.zhangqing.online/tags/Hexo/</loc>
-    <lastmod>2021-04-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.zhangqing.online/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2021-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
