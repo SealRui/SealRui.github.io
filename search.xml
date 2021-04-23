@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo-NexT Tag 插件的使用</title>
-    <url>/archives/20210419.html</url>
+    <url>/archives/Tag%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8.html</url>
     <content><![CDATA[<p>Tag Plugin 是一种使 Hexo 支持特殊样式内容的方法。例如，我们无法在标准 Markdown 中显示具有自定义尺寸的图像。然后我们可以使用标签插件来解决它。 Hexo 有很多可以帮助用户的标签。 Hexo 还具有主题接口，使主题能够创建自己的标签。</p>
 <span id="more"></span>
 
