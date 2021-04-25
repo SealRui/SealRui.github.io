@@ -6,7 +6,7 @@
   <link href="https://www.zhangqing.online/atom.xml" rel="self"/>
   
   <link href="https://www.zhangqing.online/"/>
-  <updated>2021-04-23T09:38:32.591Z</updated>
+  <updated>2021-04-25T08:08:02.779Z</updated>
   <id>https://www.zhangqing.online/</id>
   
   <author>
@@ -17,30 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo-NexT Tag 插件的使用</title>
-    <link href="https://www.zhangqing.online/archives/Tag%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8.html"/>
-    <id>https://www.zhangqing.online/archives/Tag%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8.html</id>
-    <published>2021-04-19T17:12:04.000Z</published>
-    <updated>2021-04-23T09:38:32.591Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Tag Plugin 是一种使 Hexo 支持特殊样式内容的方法。例如，我们无法在标准 Markdown 中显示具有自定义尺寸的图像。然后我们可以使用标签插件来解决它。 Hexo 有很多可以帮助用户的标签。 Hexo 还具有主题接口，使主题能够创建自己的标签。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工具" scheme="https://www.zhangqing.online/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="Hexo" scheme="https://www.zhangqing.online/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用Wkhtmltopdf导出PDF</title>
     <link href="https://www.zhangqing.online/archives/%E4%BD%BF%E7%94%A8Wkhtmltopdf%E5%AF%BC%E5%87%BAPDF.html"/>
     <id>https://www.zhangqing.online/archives/%E4%BD%BF%E7%94%A8Wkhtmltopdf%E5%AF%BC%E5%87%BAPDF.html</id>
     <published>2021-04-16T16:23:03.000Z</published>
-    <updated>2021-04-23T09:38:32.591Z</updated>
+    <updated>2021-04-25T08:08:02.779Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;em&gt;Wkhtmltopdf是什么？引用&lt;a href=&quot;https://wkhtmltopdf.org/&quot;&gt;官网&lt;/a&gt;的一句话&lt;/em&gt;：&lt;/p&gt;
@@ -64,7 +45,7 @@
     <link href="https://www.zhangqing.online/archives/hello.html"/>
     <id>https://www.zhangqing.online/archives/hello.html</id>
     <published>2021-03-23T13:20:03.000Z</published>
-    <updated>2021-04-23T09:38:32.591Z</updated>
+    <updated>2021-04-25T08:08:02.779Z</updated>
     
     
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
