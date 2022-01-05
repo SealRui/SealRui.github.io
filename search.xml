@@ -1,6 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>github连接报错</title>
+    <url>/archives/github%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99.html</url>
+    <content><![CDATA[<p>在github拉取代码时报错</p>
+<p><img src="https://gitee.com/SealRui/images-upload/raw/master/myblog/20220105095625.png"></p>
+<span id="more"></span>
+
+<p>首先检查ssh连接是否成功，在git输入以下命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>若还是报错ssh: connect to host github.com port 22: Connection timed out就可以使用以下解决办法</p>
+<ol>
+<li><h3 id="打开终端，进入-ssh目录，查看是否存在这些文件-若不存在，则可能是ssh没配置对，首先需要配置ssh"><a href="#打开终端，进入-ssh目录，查看是否存在这些文件-若不存在，则可能是ssh没配置对，首先需要配置ssh" class="headerlink" title="打开终端，进入/.ssh目录，查看是否存在这些文件 若不存在，则可能是ssh没配置对，首先需要配置ssh"></a>打开终端，进入/.ssh目录，查看是否存在这些文件 若不存在，则可能是ssh没配置对，首先需要配置ssh</h3><p><img src="https://gitee.com/SealRui/images-upload/raw/master/myblog/20220105100219.png"></p>
+<p>配置ssh：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>代码参数含义：</p>
+<p>-t 指定密钥类型，默认是 rsa ，可以省略。<br>-C 设置注释文字，比如邮箱。<br>-f 指定密钥文件存储文件名。</p>
+</blockquote>
+<p>以上代码省略了 -f 参数，因此，运行上面那条命令后会让你输入一个文件名，用于保存刚才生成的 SSH key 代码，如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Generating public&#x2F;private rsa key pair.</span><br><span class="line"># Enter file in which to save the key (&#x2F;c&#x2F;Users&#x2F;you&#x2F;.ssh&#x2F;id_rsa): [Press enter]</span><br></pre></td></tr></table></figure>
+
+<p>当然，你也可以不输入文件名，使用默认文件名（推荐），那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。</p>
+<p>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），</p>
+<p>当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了，如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line"># Enter same passphrase again:</span><br></pre></td></tr></table></figure>
+
+<p>接下来，就会显示如下代码提示，如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in &#x2F;c&#x2F;Users&#x2F;you&#x2F;.ssh&#x2F;id_rsa.</span><br><span class="line"># Your public key has been saved in &#x2F;c&#x2F;Users&#x2F;you&#x2F;.ssh&#x2F;id_rsa.pub.</span><br><span class="line"># The key fingerprint is:</span><br><span class="line"># 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span><br></pre></td></tr></table></figure>
+
+<p>当你看到上面这段代码的收，那就说明，你的 SSH key 已经创建成功，你只需要添加到github的SSH key上就可以了。</p>
+<p>在浏览器登录你的github账号，把上面生成的id_rsa.pub内容添加到github上的SSH keys中。</p>
+</li>
+<li><h3 id="若存在则在继续在终端输入以下命令新建一个文件"><a href="#若存在则在继续在终端输入以下命令新建一个文件" class="headerlink" title="若存在则在继续在终端输入以下命令新建一个文件"></a>若存在则在继续在终端输入以下命令新建一个文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim config</span><br></pre></td></tr></table></figure>
+
+<p>在文件中输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User sealrui@qq.com</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~&#x2F;.ssh&#x2F;id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
+
+<p>最后:wq退出编辑即可</p>
+</li>
+<li><h3 id="接着再执行"><a href="#接着再执行" class="headerlink" title="接着再执行"></a>接着再执行</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>出现提示回车yes即可</p>
+</li>
+</ol>
+<p><img src="https://gitee.com/SealRui/images-upload/raw/master/myblog/20220105101716.png"></p>
+<p>​    验证就能顺利通过了</p>
+]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git常用命令</title>
+    <url>/archives/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</url>
+    <content><![CDATA[<p>记录git常用命令，好记性不如烂笔头</p>
+<span id="more"></span>
+
+<ul>
+<li>初始化git仓库</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>该命令执行完后会在当前目录生成一个 .git 隐藏文件夹</p>
+<ul>
+<li>将目录下以 .c 结尾及 README 文件提交到仓库中</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add *.c </span><br><span class="line">git add README </span><br><span class="line">git commit -m <span class="string">&#x27;初始化项目版本&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将远程仓库克隆到本地</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;repo&gt; &lt;directory&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">#参数说明：</span></span><br><span class="line"><span class="comment">#repo: Git远程仓库地址。</span></span><br><span class="line"><span class="comment">#directory: 本地目录。</span></span><br><span class="line"><span class="comment">#git clone git://github.com/schacon/grit.git mygrit/grit</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Git从master主分支创建Develop分支的命令</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout -b develop master</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到Master分支 </span></span><br><span class="line">git checkout master </span><br><span class="line"></span><br><span class="line"><span class="comment"># 对Develop分支进行合并 </span></span><br><span class="line">git merge --no-ff develop </span><br><span class="line"></span><br><span class="line"><span class="comment"># 对合并生成的新节点，做一个标签 </span></span><br><span class="line">git tag -a 0.0.1 </span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支 </span></span><br><span class="line">git branch -d develop</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#该命令显示从最近到最远的提交日志。每一次提交都有对应的 commit id 和 commit message </span></span><br><span class="line">git <span class="built_in">log</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">#根据 id 回退到指定的版本 </span></span><br><span class="line">git reset --hard id </span><br><span class="line"></span><br><span class="line"><span class="comment">#查看命令操作的历史 </span></span><br><span class="line">git reflog</span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>git remote</li>
+</ul>
+<ol>
+<li>不带选项的时候，git remote命令列出所有远程主机</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote -v </span><br><span class="line">origin git@github.com:jquery/jquery.git (fetch) </span><br><span class="line">origin git@github.com:jquery/jquery.git (push)</span><br></pre></td></tr></table></figure>
+
+
+<ol start="2">
+<li>克隆版本库的时候，所使用的远程主机自动被Git命名为origin。如果想用其他的主机名，需要用git clone命令的-o选项指定</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -o jQuery https://github.com/jquery/jquery.git </span><br><span class="line">$ git remote </span><br><span class="line">jQuery</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>git remote show命令加上主机名，可以查看该主机的详细信息</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote show &lt;主机名&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>git remote add命令用于添加远程主机。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote add &lt;主机名&gt; &lt;网址&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>git remote rm命令用于删除远程主机。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote rm &lt;主机名&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>git remote rename命令用于远程主机的改名。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote rename &lt;原主机名&gt; &lt;新主机名&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>git fetch </li>
+</ul>
+<p>一旦远程主机的版本库有了更新（Git术语叫做commit），需要将这些更新取回本地，这时就要用到git fetch命令。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git fetch &lt;远程主机名&gt; <span class="comment">#上面命令将某个远程主机的更新，全部取回本地。</span></span><br></pre></td></tr></table></figure>
+
+<p><code>git fetch</code>命令通常用来查看其他人的进程，因为它取回的代码对你本地的开发代码没有影响。</p>
+<p>默认情况下,<code>git fetch</code>取回所有分支（branch）的更新。如果只想取回特定分支的更新，可以指定分支名。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git fetch &lt;远程主机名&gt; &lt;分支名&gt; </span><br><span class="line">$ git fetch origin master</span><br></pre></td></tr></table></figure>
+
+<p>所取回的更新，在本地主机上要用”远程主机名/分支名”的形式读取。比如<code>origin</code>主机的<code>master</code>，就要用<code>origin/master</code>读取。</p>
+<p><code>git branch</code>命令的<code>-r</code>选项，可以用来查看远程分支，<code>-a</code>选项查看所有分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -r </span><br><span class="line">origin/master </span><br><span class="line"></span><br><span class="line">$ git branch -a</span><br><span class="line">* master </span><br><span class="line">  remotes/origin/master </span><br><span class="line"><span class="comment">#上面命令表示，本地主机的当前分支是master，远程分支是origin/master。</span></span><br></pre></td></tr></table></figure>
+
+<p>取回远程主机的更新以后，可以在它的基础上，使用git checkout命令创建一个新的分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b newBrach origin/master </span><br><span class="line"></span><br><span class="line"><span class="comment">#本地分支上合并远程分支 </span></span><br><span class="line">$ git merge origin/master</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>git pull</li>
+</ul>
+<p>git pull命令的作用是，取回远程主机某个分支的更新，再与本地的指定分支合并。它的完整格式稍稍有点复杂。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt; </span><br><span class="line"></span><br><span class="line"><span class="comment">#取回origin主机的next分支，与本地的master分支合并 </span></span><br><span class="line">$ git pull origin next:master </span><br><span class="line"></span><br><span class="line"><span class="comment">#如果远程分支是与当前分支合并，则冒号后面的部分可以省略。 </span></span><br><span class="line">$ git pull origin next </span><br><span class="line"></span><br><span class="line"><span class="comment">#上面命令表示，取回origin/next分支，再与当前分支合并。实质上，这等同于先做git fetch，再做git merge。</span></span><br></pre></td></tr></table></figure>
+
+<p>在某些场合，Git会自动在本地分支与远程分支之间，建立一种追踪关系（tracking）。比如，在<code>git clone</code>的时候，所有本地分支默认与远程主机的同名分支，建立追踪关系，也就是说，本地的<code>master</code>分支自动”追踪”<code>origin/master</code>分支。</p>
+<ul>
+<li>Git也允许手动建立追踪关系。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch --set-upstream master origin/next</span><br></pre></td></tr></table></figure>
+
+
+<p>上面命令指定<code>master</code>分支追踪<code>origin/next</code>分支。</p>
+<p>如果当前分支与远程分支存在追踪关系，<code>git pull</code>就可以省略远程分支名。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git pull origin</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示，本地的当前分支自动与对应的<code>origin</code>主机”追踪分支”（remote-tracking branch）进行合并。</p>
+<p>如果当前分支只有一个追踪分支，连远程主机名都可以省略。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示，当前分支自动与唯一一个追踪分支进行合并。</p>
+<ul>
+<li>git push</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果省略远程分支名，则表示将本地分支推送与之存在”追踪关系”的远程分支（通常两者同名），如果该远程分支不存在，则会被新建。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示，将本地的<code>master</code>分支推送到<code>origin</code>主机的<code>master</code>分支。如果后者不存在，则会被新建。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git reset node_modules </span><br><span class="line"><span class="comment">#把node_modules目录移除 add 索引库</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git rm path </span><br><span class="line"><span class="comment"># 删除暂存区或分支上的文件, 同时工作区也不需要这个文件了,和 rm 命令类似 </span></span><br><span class="line"></span><br><span class="line">git rm -r --cached path </span><br><span class="line"><span class="comment"># 只是删除git 暂存区的文件，对本地文件没有影响 # -r 递归删除子目录</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo-NexT Tag 插件的使用</title>
     <url>/archives/Hexo-NexT%20Tag%20%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8.html</url>
     <content><![CDATA[<p>Tag Plugin 是一种使 Hexo 支持特殊样式内容的方法。例如，我们无法在标准 Markdown 中显示具有自定义尺寸的图像。然后我们可以使用标签插件来解决它。 Hexo 有很多可以帮助用户的标签。 Hexo 还具有主题接口，使主题能够创建自己的标签。</p>
