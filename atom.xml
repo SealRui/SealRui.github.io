@@ -6,7 +6,7 @@
   <link href="https://www.sealrui.top/atom.xml" rel="self"/>
   
   <link href="https://www.sealrui.top/"/>
-  <updated>2022-06-02T06:10:40.399Z</updated>
+  <updated>2022-06-02T08:40:11.805Z</updated>
   <id>https://www.sealrui.top/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用github+picgo搭建个人图床</title>
+    <link href="https://www.sealrui.top/archives/75322fe7.html"/>
+    <id>https://www.sealrui.top/archives/75322fe7.html</id>
+    <published>2022-06-02T06:35:15.000Z</published>
+    <updated>2022-06-02T08:40:11.805Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;之前用的gitee+picgo搭建的个人图床因为一些未知原因现在不给用了，所以就想着用github代替gitee。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;配置github&quot;&gt;配置github&lt;/h2&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="瞎折腾" scheme="https://www.sealrui.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+    
+    <category term="瞎折腾" scheme="https://www.sealrui.top/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="https://www.sealrui.top/archives/4a17b156.html"/>
     <id>https://www.sealrui.top/archives/4a17b156.html</id>
     <published>2021-01-02T04:14:15.000Z</published>
-    <updated>2022-06-02T06:10:40.399Z</updated>
+    <updated>2022-06-02T08:40:11.805Z</updated>
     
     
       
@@ -34,6 +63,10 @@
     
     
     
+    <category term="hello" scheme="https://www.sealrui.top/categories/hello/"/>
+    
+    
+    <category term="hello" scheme="https://www.sealrui.top/tags/hello/"/>
     
   </entry>
   

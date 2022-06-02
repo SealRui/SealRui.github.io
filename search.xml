@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>使用github+picgo搭建个人图床</title>
+      <link href="/archives/75322fe7.html"/>
+      <url>/archives/75322fe7.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>之前用的gitee+picgo搭建的个人图床因为一些未知原因现在不给用了，所以就想着用github代替gitee。</p></blockquote><h2 id="配置github">配置github</h2><h3 id="新建仓库">新建仓库</h3><p><strong>这里注意仓库要设置public</strong>,不然引用URL访问不到仓库图片。</p><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/20220602105505.png" alt=""></p><h3 id="设置token">设置token</h3><p>仓库建好后，点击屏幕右上角的头像进入<code>settings</code></p><p>找到最下面的<code>Developer settings</code></p><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/Pasted%20image%2020220602110927.png" alt=""></p><p>点击 Personal access tokens，再点 Generate new token 新建 token</p><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/20220602113536.png" alt=""></p><p>填写 Notes 信息，选择 token 过期时间，为了安全，GitHub 会强烈建议不要设置成永久。这个大家根据自己实际情况选择，到期之后重新生成即可。</p><p>复选框的话，repo 一定要全选，其他的无所谓，我是都勾选了。</p><p>确定之后，就生成我们需要的 token 了。</p><h3 id="配置-PicGo">配置 PicGo</h3><p>下载Picgo：github地址<a href="https://github.com/Molunerfinn/PicGo/releases">Releases · Molunerfinn/PicGo · GitHub</a><br>，然后安装。</p><p>选择github图床开始配置</p><ul><li>设定仓库名：上文在 GitHub 创建的仓库。</li><li>设定分支名：main。</li><li>设定 Token：上文生成的 token。</li><li>指定存储路径：为空的话会上传到跟目录，也可以指定路径。</li><li>设定自定义域名：可以为空，这里为了使用 CDN 加快图片的访问速度，按这样格式填写：<code>https://cdn.jsdelivr.net/gh/用户名/仓库名</code></li></ul><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/20220602091747.png" alt=""></p><p>配置完成上传图片就能在我们的github仓库看见了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 瞎折腾 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 瞎折腾 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/archives/4a17b156.html"/>
       <url>/archives/4a17b156.html</url>
@@ -11,6 +36,18 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start">Quick Start</h2><h3 id="Create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> hello </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hello </tag>
+            
+        </tags>
       
     </entry>
     

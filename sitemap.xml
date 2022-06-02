@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://www.sealrui.top/archives/75322fe7.html</loc>
+    
+    <lastmod>2022-06-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.sealrui.top/Gallery/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
@@ -82,6 +91,34 @@
   </url>
 
   
+  <url>
+    <loc>https://www.sealrui.top/tags/hello/</loc>
+    <lastmod>2022-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sealrui.top/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2022-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://www.sealrui.top/categories/hello/</loc>
+    <lastmod>2022-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sealrui.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2022-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
