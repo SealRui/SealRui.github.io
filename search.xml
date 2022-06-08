@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>frps服务部署配置</title>
+      <link href="/archives/742401e5.html"/>
+      <url>/archives/742401e5.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、简介">一、简介</h2><p>frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。</p><p>通过在具有公网 IP 的节点上部署 frp 服务端，可以轻松地将内网服务穿透到公网，同时提供诸多专业的功能特性，这包括：</p><blockquote><p><code>客户端服务端通信支持 TCP、KCP 以及 Websocket 等多种协议。 采用 TCP 连接流式复用，在单个连接间承载更多请求，节省连接建立时间。 代理组间的负载均衡。 端口复用，多个服务通过同一个服务端端口暴露。 多个原生支持的客户端插件（静态文件查看，HTTP、SOCK5 代理等），便于独立使用 frp 客户端完成某些工作。 高度扩展性的服务端插件系统，方便结合自身需求进行功能扩展。 服务端和客户端 UI 页面。</code></p></blockquote><p>frp 采用 Golang 编写，支持跨平台，仅需下载对应平台的二进制文件即可执行，没有额外依赖。</p><h2 id="二、服务端安装配置">二、服务端安装配置</h2><p>安装环境：</p><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/Pasted%20image%2020220531141353.png" alt=""></p><p>官网github地址：<a href="https://github.com/fatedier/frp">github.com/fatedier/frp</a></p><p>选择选要下载安装包，使用wget安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.43.0/frp_0.43.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure><p>使用tar解压</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf frp_0.43.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure><p>解压之后有这几个文件</p><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/Pasted%20image%2020220531140859.png" alt=""></p><p>其中<code>frps</code>开头的文件是服务端文件，<code>frpc</code>开头的文件是客户端文件</p><p>编辑服务端配置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim frps.ini</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[common] </span><br><span class="line">bind_port = 7000 #绑定的端口 </span><br><span class="line"></span><br><span class="line">dashboard_user = admin #控制台用户名 </span><br><span class="line">dashboard_pwd = password #控制台密码 </span><br><span class="line">dashboard_port = 7500 #控制台的端口</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/Pasted%20image%2020220531141754.png" alt=""></p><p>启动服务端</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./frps -c ./frps.ini</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/Pasted%20image%2020220531142135.png" alt=""></p><p>打开浏览器，访问公网ip:7500</p><p><img src="https://cdn.jsdelivr.net/gh/SealRui/picgo@main/imgs/Pasted%20image%2020220531142342.png" alt=""></p><h2 id="三、使用-systemd-管理-frp-服务">三、使用 systemd 管理 frp 服务</h2><h3 id="基于单元文件管理-frps-服务">基于单元文件管理 frps 服务</h3><p>创建<code>frps.service</code>文件，文件内内容如下：</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Frp Server Service # 服务描述</span><br><span class="line">After=network.target # frps 将会在 network.service 启动完毕之后再启动</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=simple # 不论进程是否启动成功，systemctl start 都执行成功</span><br><span class="line">User=nobody # 设置进程在执行时使用的用户</span><br><span class="line">Restart=<span class="keyword">on</span>-failure # <span class="keyword">on</span>-failure 表示仅在服务进程异常退出时重启</span><br><span class="line">RestartSec=<span class="number">5</span>s # 设置在重启服务前暂停多长时间</span><br><span class="line">ExecStart=/usr/bin/frps -<span class="keyword">c</span> /etc/frp/frps.ini # 在启动该服务时需要执行的命令行</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target # 用于 systemctl enable 时创建软连接</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>将这个文件拷贝到 <code>/usr/lib/systemd/system/</code> 目录下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp frps.service /usr/lib/systemd/system/</span><br></pre></td></tr></table></figure><p>将配置文件和启动文件拷贝到指定目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /etc/frp</span><br><span class="line">cp frps.ini /etc/frp</span><br><span class="line">cp frps /usr/bin</span><br></pre></td></tr></table></figure><blockquote><p><em>重新加载(未验证)</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;systemctl reload-daemon </span><br></pre></td></tr></table></figure></blockquote><p>设置开机自启</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable frps.service</span><br></pre></td></tr></table></figure><p>启动frps服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start frps.service</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 瞎折腾 </category>
+          
+          <category> frp </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> frp </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用github+picgo搭建个人图床</title>
       <link href="/archives/75322fe7.html"/>
       <url>/archives/75322fe7.html</url>
@@ -14,6 +43,8 @@
       <categories>
           
           <category> 瞎折腾 </category>
+          
+          <category> 图床 </category>
           
       </categories>
       

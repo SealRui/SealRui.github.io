@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.sealrui.top/link/index.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,16 @@
   <url>
     <loc>https://www.sealrui.top/tags/index.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sealrui.top/archives/742401e5.html</loc>
+    
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +31,7 @@
   <url>
     <loc>https://www.sealrui.top/archives/4a17b156.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,16 +40,7 @@
   <url>
     <loc>https://www.sealrui.top/archives/75322fe7.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.sealrui.top/Gallery/index.html</loc>
-    
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +49,7 @@
   <url>
     <loc>https://www.sealrui.top/about/index.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +58,7 @@
   <url>
     <loc>https://www.sealrui.top/artitalk/index.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,7 +67,16 @@
   <url>
     <loc>https://www.sealrui.top/categories/index.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sealrui.top/Gallery/index.html</loc>
+    
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +85,7 @@
   <url>
     <loc>https://www.sealrui.top/Gallery/wallpaper/index.html</loc>
     
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,22 +94,36 @@
 
   <url>
     <loc>https://www.sealrui.top/</loc>
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://www.sealrui.top/tags/frp/</loc>
+    <lastmod>2022-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sealrui.top/tags/linux/</loc>
+    <lastmod>2022-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.sealrui.top/tags/hello/</loc>
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.sealrui.top/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -108,15 +131,29 @@
 
   
   <url>
-    <loc>https://www.sealrui.top/categories/hello/</loc>
-    <lastmod>2022-06-02</lastmod>
+    <loc>https://www.sealrui.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2022-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.sealrui.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2022-06-02</lastmod>
+    <loc>https://www.sealrui.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/frp/</loc>
+    <lastmod>2022-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sealrui.top/categories/hello/</loc>
+    <lastmod>2022-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sealrui.top/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2022-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
